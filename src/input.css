@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(155,66,207);
+  --font-prime:"Rubik+Gemsstones", "Limelight", sans-serif;
+}
+
+button:hover{
+  box-shadow:0px 0px 20px rgba(155,66,207,0.8);
+}

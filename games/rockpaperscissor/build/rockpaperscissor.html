@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>GAME ZONE-ROCKPAPERSCISSOR</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="flex flex-col items-centre min-h-screen font-prime  w-full"
+    >
+      <header
+        class="bg-primary text-white dark:text-blacks h-17 w-full dark:text-black font-bold"
+      >
+        <section
+          class="mx-auto max-w-4xl flex items-center flex-row justify-between gap-1"
+        >
+          <h1
+            class="text-3xl font-medium text-center pt-3 sm:text-4xl md:text-5xl"
+          >
+            🎮
+            <span class="font-bold font-prime text-3xl sm:text-4xl md:text-5xl"
+              >GAME ZONE</span
+            >
+          </h1>
+          <h5
+            class="text-[0.5rem] text-center pt-7 font-bold font-Limelight sm:text-[0.6rem] md:text-[0.8rem]"
+          >
+            RELIVE YOUR CHILDHOOD
+          </h5>
+        </section>
+      </header>
+
+      <main class="w-full flex flex-1 justify-center  text-primary bg-white dark:bg-black align-middle text-center">
+        
+        <section class="flex flex-col  gap-15 items-center align-middle md:gap-10 justify-center">
+          <div class="text-3xl md:text-5xl">
+           Rock Paper Scissors
+          </div>
+          <div class="flex flex-row gap-4">
+          <button
+            onclick="
+      playGame('rock');
+    "
+            class="size-20 rounded-[20rem]  bg-white dark:bg-black border-4 border-primary border-dashed duration-1000 md:size-30"
+          >
+            <img src="../images/rock-emoji.png" class="size-[90%] object-cover pb-3 pl-3" />
+          </button>
+
+          <button
+            onclick="
+      playGame('paper');
+    "
+            class="size-20 rounded-[20rem]  bg-white dark:bg-black border-4 border-primary border-dashed
+            duration-1000 md:size-30"
+          >
+            <img src="../images/paper-emoji.png" class="size-[90%] object-cover pb-3 pl-3" />
+          </button>
+
+          <button
+            onclick="
+      playGame('scissors');
+    "
+            class="size-20 rounded-[20rem]  bg-white dark:bg-black border-4 border-primary border-dashed duration-1000 md:size-30"
+          >
+            <img src="../images/scissors-emoji.png" class="size-[90%] object-cover pb-3 pl-3" />
+          </button>
+          </div>
+          <div>
+          <p class="js-result result text-primary text-2xl md:text-4xl"></p>
+          </div>
+          <div>
+          <p class="js-moves flex flex-row text-xl pl-15 mb-5 md:text-3xl md:pl-25"></p>
+          <p class="js-score score text-2xl pl-3 md:text-4xl"></p>
+          </div>
+          <div>
+          <button
+            onclick="
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+    "
+            class="reset-score-button border-dashed border-4 rounded-4xl w-40 h-10 duration-1000 md:w-60 md:h-20 md:text-2xl"
+          >
+            Reset Score
+          </button>
+          </div>
+        </section>
+        
+      </main>
+
+      <footer class="bg-primary w-full">
+        <section
+          class="bg-primary text-[1rem] text-white dark:text-blacks mx-auto max-w-4xl h-15 flex flex-row justify-between items-center dark:text-black sm:text-2xl"
+        >
+          <div>FOLLOW FOR MORE PROJECTS :</div>
+          <div class="pr-3">
+            <a
+              href="https://www.linkedin.com/in/shouvik-maity-a84612363/"
+              target="_blank"
+            >
+              LINKEDIN
+            </a>
+          </div>
+          <div class="pr-2">
+            <a href="https://github.com/shouvik-maity" target="_blank">
+              GITHUB
+            </a>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="../JS/rockpaper.js"></script>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>GAME ZONE-GUESS THE NUMBER</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="flex flex-col items-centre min-h-screen font-prime"
+    >
+      <header
+        class="bg-primary text-white dark:text-blacks h-17 w-full dark:text-black font-bold"
+      >
+        <section
+          class="mx-auto max-w-4xl flex items-center flex-row justify-between gap-2"
+        >
+          <h1
+            class="text-3xl font-medium text-center pt-3 sm:text-4xl md:text-5xl"
+          >
+            🎮
+            <span class="font-bold font-prime text-3xl sm:text-4xl md:text-5xl"
+              >GAME ZONE</span
+            >
+          </h1>
+          <h5
+            class="text-[0.5rem] text-center pt-7 font-bold font-Limelight sm:text-[0.6rem] md:text-[0.8rem]"
+          >
+            RELIVE YOUR CHILDHOOD
+          </h5>
+        </section>
+      </header>
+
+      <main
+        class="w-full flex flex-1 justify-center text-primary bg-white dark:bg-black align-middle text-center"
+      >
+     <section
+          class="flex flex-col gap-5 items-center align-middle md:gap-10 justify-center"
+        >
+          <div class="text-3xl text-center md:text-4xl">
+            GUESS THE NUMBER BETWEEN 1 TO 100
+          </div>
+          <div class=" text-10 text-center w-76 border-4 border-dashed border-primary rounded-3xl p-2 md:text-2xl md:w-140">
+            <p>RULES</p>
+            <p>1.THE NUMBER SHOULD BE BETWEEN 1 TO 100</p>
+            <p>2.YOU ONLY HAVE 5 CHANCES</p>
+          </div>
+          <div>
+            <input type="text" id="userInput" class="input border-4 border-primary rounded-3xl p-2 text-center border-dashed bg-white dark:bg-black w-60 md:w-90 md:text-2xl" placeholder="ENTER THE NUMBER"/>
+          </div>
+          <div>
+            <button id="checkBtn" class="border-4 w-40 md:w-60 border-primary rounded-3xl p-2 text-center border-dashed bg-white dark:bg-black duration-500 md:text-2xl">
+              GUESS
+            </button>
+          </div>
+          <div>
+            <p class="result md:text-2xl">
+              GUESS:<span id="counter">0</span>
+            </p>
+          </div>
+          <div>
+            <p class="hint md:text-2xl" id="hint">
+              GUESS THE NUMBER TO UNLOCK THE HINT
+            </p>
+          </div>
+          <div class="pb-5 md:text-2xl md:w-80">
+            <button id="resetBtn" class="border-4 w-40 border-primary rounded-3xl p-2 text-center border-dashed bg-white dark:bg-black duration-500">
+              RESET
+            </button>
+      </section>
+      </main>
+
+      <footer class="bg-primary w-full">
+        <section
+          class="bg-primary text-[1rem] text-white dark:text-blacks mx-auto max-w-4xl h-15 flex flex-row justify-between items-center dark:text-black sm:text-2xl"
+        >
+          <div>FOLLOW FOR MORE PROJECTS :</div>
+          <div class="pr-3">
+            <a
+              href="https://www.linkedin.com/in/shouvik-maity-a84612363/"
+              target="_blank"
+            >
+              LINKEDIN
+            </a>
+          </div>
+          <div class="pr-2">
+            <a href="https://github.com/shouvik-maity" target="_blank">
+              GITHUB
+            </a>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="../js/guess.js"></script>
+  </body>
+</html>

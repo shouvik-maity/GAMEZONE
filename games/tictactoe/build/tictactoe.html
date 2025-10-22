@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/output.css">
+  <title>GAME ZONE-TICTACTOE</title>
+</head>
+<body>
+      <div
+      id="container"
+      class="flex flex-col items-centre min-h-screen font-prime  w-full"
+    >
+      <header
+        class="bg-primary text-white dark:text-blacks h-17 w-full dark:text-black font-bold"
+      >
+        <section
+          class="mx-auto max-w-4xl flex items-center flex-row justify-between gap-1"
+        >
+          <h1
+            class="text-3xl font-medium text-center pt-3 sm:text-4xl md:text-5xl"
+          >
+            🎮
+            <span class="font-bold font-prime text-3xl sm:text-4xl md:text-5xl"
+              >GAME ZONE</span
+            >
+          </h1>
+          <h5
+            class="text-[0.5rem] text-center pt-7 font-bold font-Limelight sm:text-[0.6rem] md:text-[0.8rem]"
+          >
+            RELIVE YOUR CHILDHOOD
+          </h5>
+        </section>
+      </header>
+
+      <main class="w-full flex flex-1 justify-center  text-primary bg-white dark:bg-black align-middle text-center">
+        
+        <section class="flex flex-col  gap-15 items-center align-middle md:gap-10 justify-center">
+         <div class="text-4xl md:text-5xl">
+          TIC TAC TOE
+         </div>
+         <div id="game" class=" grid grid-cols-3">
+          <div class="box border-2 border-solid border-primary border-l-0 border-t-0">
+            <span class="boxtext ">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-t-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-r-0 border-t-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-l-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-r-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-l-0 border-b-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-b-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+          <div class="box border-2 border-solid border-primary border-r-0 border-b-0">
+            <span class="boxtext">
+              
+            </span>
+          </div>
+
+         </div>
+
+           <div class="info px-5 font-bold text-3xl sm:text-4xl md:text-5xl">
+            x
+          </div>
+         <div>
+            <button class="btn w-25 h-10 border-dotted border-primary border-4 rounded-2xl" id="reset" onclick="reset()">
+              RESET
+            </button>
+          </div>
+        </section>
+        
+      </main>
+
+      <footer class="bg-primary w-full">
+        <section
+          class="bg-primary text-[1rem] text-white dark:text-blacks mx-auto max-w-4xl h-15 flex flex-row justify-between items-center dark:text-black sm:text-2xl"
+        >
+          <div>FOLLOW FOR MORE PROJECTS :</div>
+          <div class="pr-3">
+            <a
+              href="https://www.linkedin.com/in/shouvik-maity-a84612363/"
+              target="_blank"
+            >
+              LINKEDIN
+            </a>
+          </div>
+          <div class="pr-2">
+            <a href="https://github.com/shouvik-maity" target="_blank">
+              GITHUB
+            </a>
+          </div>
+        </section>
+      </footer>
+    </div>
+
+    <script src="../JS/tictactoe.js"></script>
+</body>
+</html>
